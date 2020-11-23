@@ -15,7 +15,7 @@ def alarm(set_alarm_timer):
         print(now)
         if now == set_alarm_timer:
             print("Time to Wake Up")
-            os.system('say "時間だよ"')
+            os.system('say "全員集合だよ"')
             break
 
 def actual_time():
@@ -39,9 +39,9 @@ min = StringVar()
 sec = StringVar()
 
 # Time required to set the alarm clock:
-hourTime= Entry(clock,textvariable = hour,bg = "pink",width = 15).place(x=110,y=30)
-minTime= Entry(clock,textvariable = min,bg = "pink",width = 15).place(x=150,y=30)
-secTime= Entry(clock,textvariable = sec,bg = "pink", width = 15).place(x=200,y=30)
+hourTime= Entry(clock,textvariable = hour,bg = "pink",width = 5).place(x=110,y=30)
+minTime= Entry(clock,textvariable = min,bg = "pink",width = 5).place(x=160,y=30)
+secTime= Entry(clock,textvariable = sec,bg = "pink", width = 5).place(x=210,y=30)
 
 #To take the time input by user:
 submit = Button(clock,text = "Set Alarm",fg="red",width = 10, command = actual_time).place(x=110,y=70)
